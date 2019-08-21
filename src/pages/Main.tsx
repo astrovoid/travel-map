@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'antd';
 
 class MainPage extends React.Component<{}, {}> {
     componentDidMount() {
@@ -7,7 +8,16 @@ class MainPage extends React.Component<{}, {}> {
 
     render() {
         return (
-            <div>Main Page</div>
+            <div>
+                <Row>
+                    <Col span={12}>
+                        Точки
+                    </Col>
+                    <Col span={12}>
+                        Карта
+                    </Col>
+                </Row>
+            </div>
         )
     }
 }

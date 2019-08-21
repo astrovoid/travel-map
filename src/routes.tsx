@@ -6,10 +6,10 @@ import AboutPage from './pages/About';
 
 const history = createBrowserHistory();
 
-const Routing = () => (
+export const Routing = () => (
     <Router history={history}>
         <Switch>
-            <Route path="/" component={MainPage}/>
+            <Route exact path="/" component={MainPage}/>
             <Route path="/about" component={AboutPage}/>
         </Switch>
     </Router>
